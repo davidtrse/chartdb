@@ -1,10 +1,5 @@
 FROM node:22-alpine AS builder
 
-ARG VITE_OPENAI_API_KEY
-ARG VITE_OPENAI_API_ENDPOINT
-ARG VITE_LLM_MODEL_NAME
-ARG VITE_HIDE_BUCKLE_DOT_DEV
-
 WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
